@@ -33,7 +33,7 @@ jobs:
       run: mvn -pl flink-runtime test -Dtest=org.apache.flink.runtime.state.FileStateBackendMigrationTest#testKeyedMapStateStateMigration
     
     - name: Non Dex Test
-      run: mvn -pl typescript-g edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=org.apache.flink.runtime.state.FileStateBackendMigrationTest#testKeyedMapStateStateMigration
+      run: mvn -pl  edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=org.apache.flink.runtime.state.FileStateBackendMigrationTest#testKeyedMapStateStateMigration
 
       env:
         GITHUB_TOKEN: ${{ github.token }}
